@@ -74,4 +74,14 @@ int main(void)
 
 
 
+	   delay_ms(1);				   //延时
+	   	printf("\r\n aa=  %d\r\n",aa);
+	   TIM_OCInitStructure.TIM_Pulse=aa;
+	   TIM_OC3Init(TIM3, &TIM_OCInitStructure);	  //重新装入占空比值
+	   TIM_OC4Init(TIM3, &TIM_OCInitStructure);
+	}
+		
+
+
+
 
